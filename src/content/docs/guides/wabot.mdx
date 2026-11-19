@@ -44,12 +44,18 @@ Buat file bernama \.env\ di direktori *root*, lalu isi dengan standar keamanan b
 
 ```ini
 # Kredensial AI
-GEMINI_API_KEY=YOUR_GEMINI_KEY_HERE
-ELEVENLABS_API_KEY=YOUR_ELEVENLABS_KEY_HERE
+GEMINI_API_KEYS=key1,key2,key3
+# Satu key saja juga bisa: GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+ELEVENLABS_API_KEY=YOUR_ELEVENLABS_API_KEY
+ELEVENLABS_VOICE_ID=your_voice_id_here
 
-# Pengaturan Limit
-RATE_LIMIT_MS=5000
-MAX_REQUESTS_PER_MINUTE=10
+# Owner (nomor WhatsApp owner, contoh: 6281234567890)
+OWNER_NUMBER=628xxxxxxxxxx
+OWNER_NUMBERS=
+
+# Perilaku bot (isi 1 untuk aktif, kosongkan untuk nonaktif)
+PROCESS_OWN_COMMANDS=
+DEBUG_INCOMING_MESSAGES=
 ```
 
 ## Memulai Mesin
