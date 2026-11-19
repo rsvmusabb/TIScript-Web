@@ -14,14 +14,14 @@ Isi portal ini sekarang:
 ├── src/
 │   ├── assets/        # gambar untuk halaman
 │   ├── content/
-│   │   └── docs/      # halaman dokumentasi (.md)
+│   │   └── docs/      # halaman dokumentasi (.mdx)
 │   └── content.config.ts
 ├── astro.config.mjs   # judul, sidebar, link GitHub
 ├── package.json
 └── tsconfig.json
 ```
 
-Halaman baru tinggal ditambah sebagai file `.md` di `src/content/docs/`, lalu didaftarkan di `sidebar` pada `astro.config.mjs`.
+Halaman baru tinggal ditambah sebagai file `.mdx` di `src/content/docs/`, lalu didaftarkan di `sidebar` pada `astro.config.mjs`.
 
 ## Perintah
 
@@ -33,4 +33,4 @@ Halaman baru tinggal ditambah sebagai file `.md` di `src/content/docs/`, lalu di
 | `npm run preview` | Lihat hasil build sebelum di-deploy         |
 | `npm run astro`   | Jalankan perintah Astro CLI                 |
 
-Butuh Node.js minimal v20.
+Butuh Node.js minimal v20 untuk portal ini. Bot WhatsApp yang didokumentasikan butuh Node.js minimal v22 (lihat panduan Neural WA Bot).
