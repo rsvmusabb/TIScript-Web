@@ -1,49 +1,36 @@
-# Starlight Starter Kit: Basics
+# TIScriptBE Portal
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Portal dokumentasi script automasi & bot — dibangun dengan [Astro](https://astro.build) + [Starlight](https://starlight.astro.build).
 
-```
-npm create astro@latest -- --template starlight
-```
+Isi portal ini sekarang:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Neural WA Bot** (`/guides/wabot/`) — dokumentasi bot WhatsApp berbasis AI (Gemini + ElevenLabs) dari repo [dhoells-wabot](https://github.com/rsvmusabb/dhoells-wabot).
 
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## Struktur
 
 ```
 .
-├── public/
+├── public/            # aset statis (favicon, dll)
 ├── src/
-│   ├── assets/
+│   ├── assets/        # gambar untuk halaman
 │   ├── content/
-│   │   └── docs/
+│   │   └── docs/      # halaman dokumentasi (.md)
 │   └── content.config.ts
-├── astro.config.mjs
+├── astro.config.mjs   # judul, sidebar, link GitHub
 ├── package.json
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Halaman baru tinggal ditambah sebagai file `.md` di `src/content/docs/`, lalu didaftarkan di `sidebar` pada `astro.config.mjs`.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## Perintah
 
-Static assets, like favicons, can be placed in the `public/` directory.
+| Perintah          | Fungsi                                      |
+| :---------------- | :------------------------------------------ |
+| `npm install`     | Install dependensi                          |
+| `npm run dev`     | Jalankan dev server di `localhost:4321`     |
+| `npm run build`   | Build situs statis ke `./dist/`             |
+| `npm run preview` | Lihat hasil build sebelum di-deploy         |
+| `npm run astro`   | Jalankan perintah Astro CLI                 |
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Butuh Node.js minimal v20.

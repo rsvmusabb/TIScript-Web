@@ -2,12 +2,16 @@
   "name": "tiscript-web",
   "type": "module",
   "version": "0.0.1",
+  "description": "TIScriptBE Portal — portal dokumentasi script automasi & bot (Astro + Starlight)",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.7",
