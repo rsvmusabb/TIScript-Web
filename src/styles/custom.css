@@ -10,3 +10,33 @@
 	--sl-color-accent: #5b4bc4;
 	--sl-color-accent-high: #3a2f7d;
 }
+
+/* Smooth scrolling for anchor navigation. */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Smooth transitions for links, buttons, and hover states. */
+a,
+button {
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
