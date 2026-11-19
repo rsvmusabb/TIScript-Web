@@ -1,0 +1,12 @@
+/* TIScriptBE Portal theme: cosmic indigo/violet accent. */
+:root {
+	--sl-color-accent-low: #2b2350;
+	--sl-color-accent: #8b7cff;
+	--sl-color-accent-high: #c9bfff;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #ddd6ff;
+	--sl-color-accent: #5b4bc4;
+	--sl-color-accent-high: #3a2f7d;
+}
