@@ -1,11 +1,11 @@
-﻿---
+---
 title: TIScriptBE Portal
 description: Repositori script Automasi & Bot kelas Professional.
 template: splash
 hero:
   tagline: "Deploy skrip automasi Anda dengan arsitektur tingkat dewa dan standar keamanan Zero Trust."
   image:
-    file: ../../../assets/houston.webp
+    file: ../../assets/houston.webp
   actions:
     - text: Lihat Script WA Bot
       link: /guides/wabot/

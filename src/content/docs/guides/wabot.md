@@ -1,6 +1,6 @@
-﻿---
+---
 title: Neural WA Bot (Failover AI)
-description: Skrip Bot WhatsApp berbasis AI dengan integrasi Gemini dan ElevenLabs.
+description: Skrip Bot WhatsApp berbasis AI dengan integrasi Gemini (fallback Pollinations) dan ElevenLabs.
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
@@ -27,14 +27,14 @@ Bot WhatsApp ini bukan sekadar auto-reply biasa. Ini adalah sistem automasi modu
 <Tabs>
   <TabItem label="Prasyarat" icon="setting">
     Pastikan Anda telah menginstal:
-    - Node.js (Minimal v18)
+    - Node.js (Minimal v22)
     - FFMPEG (Untuk konversi audio)
   </TabItem>
   <TabItem label="Kloning Repositori" icon="github">
-    \\\ash
-    git clone https://github.com/rsvmusabb/dhcells-wabot.git
-    cd dhcells-wabot
-    \\\
+    ```bash
+    git clone https://github.com/rsvmusabb/dhoells-wabot.git
+    cd dhoells-wabot
+    ```
   </TabItem>
 </Tabs>
 
@@ -42,7 +42,7 @@ Bot WhatsApp ini bukan sekadar auto-reply biasa. Ini adalah sistem automasi modu
 
 Buat file bernama \.env\ di direktori *root*, lalu isi dengan standar keamanan berikut:
 
-\\\env
+```env
 # Kredensial AI
 GEMINI_API_KEY=YOUR_GEMINI_KEY_HERE
 ELEVENLABS_API_KEY=YOUR_ELEVENLABS_KEY_HERE
@@ -50,16 +50,16 @@ ELEVENLABS_API_KEY=YOUR_ELEVENLABS_KEY_HERE
 # Pengaturan Limit
 RATE_LIMIT_MS=5000
 MAX_REQUESTS_PER_MINUTE=10
-\\\
+```
 
 ## Memulai Mesin
 
 Jalankan skrip penyalaan berikut. Sistem akan membangkitkan QR Code di terminal Anda.
 
-\\\ash
+```bash
 npm install
 npm run start
-\\\
+```
 
 <Aside type="tip">
   Pindai QR Code menggunakan aplikasi WhatsApp di ponsel Anda. Sistem memory *Rolling Window* akan otomatis aktif setelah perangkat terhubung.
