@@ -1,0 +1,36 @@
+---
+title: TIScriptBE Portal
+description: Repositori script Automasi & Bot kelas Professional.
+template: splash
+hero:
+  tagline: "Deploy skrip automasi Anda dengan arsitektur tingkat dewa dan standar keamanan Zero Trust."
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Lihat Script WA Bot
+      link: /guides/wabot/
+      icon: right-arrow
+      variant: primary
+    - text: Kunjungi GitHub Kami
+      link: https://github.com/rsvmusabb
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Kenapa Memilih Script Kami?
+
+<CardGrid stagger>
+	<Card title="Cosmic Security (Zero Trust)" icon="shield">
+		Setiap script dirancang tanpa hardcode API Key. 100% tersentralisasi menggunakan Environment Variables (\.env\).
+	</Card>
+	<Card title="Modular Architecture" icon="puzzle">
+		Terbebas dari *spaghetti code*. Logika dipecah menjadi *routes*, *controllers*, dan *utilities* yang bersih (DRY).
+	</Card>
+	<Card title="Failover Systems" icon="rocket">
+		Integrasi AI ganda (Gemini & ElevenLabs) dengan sistem *auto-fallback* jika salah satu *node* mengalami *down*.
+	</Card>
+	<Card title="Sliding Window Rate-Limiter" icon="warning">
+		Anti-DDoS dan sistem anti-spam bawaan untuk menjaga memori server dari serangan.
+	</Card>
+</CardGrid>
